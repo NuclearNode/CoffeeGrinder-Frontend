@@ -1,0 +1,76 @@
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 50px;
+}
+
+.logo {
+    color: white !important;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;    
+}
+
+.navbar-side {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #466e2f;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.navbar-side-item {
+    padding: 1.5rem 0;
+    margin: 3px;
+    height: 5rem;
+    background-color: #58873c;
+}
+
+.side-link {
+    color:white;
+    font-size: 20px;
+}
+
+.navbar-side {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+ .reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 990;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    line-height: 50px; /* Vertically center the text there */
+    background-color: #466e2f;
+    color: white;
+    
+}
