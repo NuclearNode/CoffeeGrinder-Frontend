@@ -6,7 +6,10 @@ body {
 .logo {
     color: white !important;
     font-family: 'Pacifico', cursive;
-    font-size: 20px;    
+    font-size: 20px;
+}
+.swipe{
+  -webkit-transition: left 1s linear;
 }
 
 .navbar-side {
@@ -72,5 +75,5 @@ body {
     line-height: 50px; /* Vertically center the text there */
     background-color: #466e2f;
     color: white;
-    
+
 }
