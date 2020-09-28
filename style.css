@@ -1,6 +1,8 @@
 body {
     /* Margin bottom by footer height */
     margin-bottom: 50px;
+    background-color: #166d3b;
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 }
 
 .logo {
@@ -8,10 +10,23 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
 }
-.swipe{
-  -webkit-transition: left 1s linear;
+h1 {
+  color: #7c795d;
+  font-family: 'Georgia';
+  font-size: 45px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 5%;
 }
 
+h2 {
+  text-align: center;
+  color: #CEF0D4;
+  font-family: monospace;
+  opacity: 0.5;
+}
 .navbar-side {
     height: 100%;
     width: 35%;
@@ -75,5 +90,37 @@ body {
     line-height: 50px; /* Vertically center the text there */
     background-color: #466e2f;
     color: white;
-
 }
+.hot:active {
+  opacity: 0.5;
+  /* border-style: solid;
+  border-color: #00FF00; */
+}
+.hot:hover {
+  position: absolute;
+  animation-duration: 3s;
+  animation-name: slideleft;
+}
+@keyframes slideleft {
+  from {
+  }
+  to {
+    transform: translate(-200px);
+  }
+}
+.cold:active {
+  opacity: 0.5;
+  /* border-style: solid;
+  border-color: #00FF00; */
+}
+.cold:hover {
+    animation-duration: 3s;
+    animation-name: slideright;
+  }
+@keyframes slideright {
+   from {
+   }
+   to {
+      transform: translate(200px);
+    }
+  }
