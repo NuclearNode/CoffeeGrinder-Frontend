@@ -1,0 +1,36 @@
+.logo {
+    color: white !important;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+.quizbutton {
+    border:none;
+    background-color: #58873c;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.welcome {
+    border: 2px solid #2e1a09;
+    margin: 20px;
+    padding: 60px 10px;
+    text-align: center; 
+}
+
+.welcome_text {
+    text-shadow: 0 0 15px white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #2e1a09;
+}
+
+.w_head {
+    font-size: 50px;
+}
+
+.w_sub {
+    font-size: 25px;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -13,40 +14,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link href="style.css" rel="stylesheet">
+    <link href="homepagestyle.css" rel="stylesheet">
     <script type="text/javascript" src="script.js"></script>
-
+    
+    <script> 
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
 <body>
-    <!--source for navbar-->
-    <nav class="navbar navbar-light navbar-static" role="navigation" style="background-color: #466e2f">
-        <button class="navbar-toggler pull-xs-right" id="navbarSideButton" type="button" style="color:white; border: none; font-size: 30px">
-            &#9776;
-        </button>
-        <ul class="navbar-side" id="navbarSide">
-            <li class="navbar-side-item text-center">
-              <a href="#" class="side-link">About</a>
-            </li>
-        </ul>
-        <div class="overlay"></div>
-        
-        <!--need this to get centered somehow-->
-        <a class="navbar-brand logo" href="index.html">CoffeeGrinder</a>
-    </nav>
+    <div id="header"></div>
+    
+    
+    
     
     <div class="container-fluid">
-        <div class="row" style="background: transparent url('images/beans.jpg') no-repeat center center /cover; padding: 200px">
-            <div class="col--12">
-                <span style="color:white">testing</span>
+        <div class="row" style="background: url('images/beans.jpg') no-repeat center center /cover;">
+            <div class="col-12">
+                <div class="welcome">
+                    <div class="welcome_text w_head">Welcome to Coffee Grinder!</div>
+                    <div class="welcome_text w_sub">Find out what drink is right for you!</div>
+                    <br />
+                    <div>
+                        <a href="/quiz1.html"><button class="quizbutton">Take the Quiz</button></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     
     
-    <footer class="footer">
-        <div class="container">
-            Footer content
-        </div>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>
