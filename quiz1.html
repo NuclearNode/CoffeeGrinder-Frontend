@@ -29,41 +29,52 @@
     
 </head>
 <body>
-    <div id="header"></div>
-    <div class="quiz_name">Drink Interest Quiz</div>
-    <div class="qchunk">
-        <div class="question">Hot or Cold</div>
-        &lt;
-        <div class="left choice">
-            <div class="hot image"></div>
-            <div class="option">Hot</div>
-        </div>
-        <div class="right choice">
-            <div class="cold image"></div>
-            <div class="option">Cold</div>
-        </div>
-        &gt;
-    </div>
-    
-<!--
-    <h1 style="word-spacing: 120px">Hot or Cold?</h1>
-    <h2>Drink Interest Quiz</h2>
-    <div class="row">
-        <div class="column">
-            <div class="hot">
-                <img id="hot" src="images/hot.jpg" alt="Hot" border="5"
-                style="border-color:grey; float: left; width: 30%; margin-top: 5%; margin-left: 20%; margin-right: 1%; margin-bottom: 15%" />
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="header"></div>
+
+
+            
+            
+            <div class="quiz_name">Drink Interest Quiz</div>
+
+            <div if="hot_cold" class="qchunk">
+                <div class="question">Hot or Cold</div>
+                <div class="choice_container">
+                    <div class="left choice">
+                        <img src="images/hot.jpg" class="image"/>
+                        <div class="option">Hot</div>
+                    </div>
+                    <div class="right choice">
+                        <img src="images/cold.jpg" class="image"/>
+                        <div class="option">Cold</div>
+                    </div>
+                </div>
+                <img src="images/left.png" class="sel left_arrow" onClick="hide('hot_cold')" />
+                <img src="images/right.png" class="sel right_arrow" onClick="hide('hot_cold')"/>
             </div>
+
+        <!--
+            <h1 style="word-spacing: 120px">Hot or Cold?</h1>
+            <h2>Drink Interest Quiz</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="hot">
+                        <img id="hot" src="images/hot.jpg" alt="Hot" border="5"
+                        style="border-color:grey; float: left; width: 30%; margin-top: 5%; margin-left: 20%; margin-right: 1%; margin-bottom: 15%" />
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="cold">
+                    <img id="cold" src="images/cold.jpg" alt="Cold" border="5"
+                    style="border-color: grey; float: right; width: 30%; margin-top: 5%;  margin-left: 1%; margin-right: 15%; margin-bottom: 15%" />
+                </div>
+            </div>
+        -->
         </div>
+
+        <div id="footer"></div>
     </div>
-    <div class="column">
-        <div class="cold">
-            <img id="cold" src="images/cold.jpg" alt="Cold" border="5"
-            style="border-color: grey; float: right; width: 30%; margin-top: 5%;  margin-left: 1%; margin-right: 15%; margin-bottom: 15%" />
-        </div>
-    </div>
--->
-    
-    <div id="footer"></div>
 </body>
 </html>

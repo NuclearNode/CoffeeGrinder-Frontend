@@ -1,23 +1,16 @@
 /*This style should apply to all pages*/
 
-body {
-    /* Margin bottom by footer height */
-/*    margin-bottom: 50px !important;*/
-}
-h1 {
-  color: #7c795d;
-  font-family: 'Georgia';
-  font-size: 45px;
-  font-style: italic;
-  font-weight: normal;
-  line-height: 48px;
-  text-align: center;
-  margin-top: 5%;
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(#222, #444);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-h2 {
-  text-align: center;
-  color: #CEF0D4;
-  font-family: monospace;
-  opacity: 0.5;
+#content-wrap {
+    padding-bottom: 50px;
 }
