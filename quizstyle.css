@@ -41,14 +41,10 @@ body {
     font-size: 40px;
 }
 
-.q_card {
-    color: white;
-}
-
 .q_title {
     color: white;
     font-size: 30px;
-    line-height: 300%;
+    padding: 30px 0;
 }
 
 .q_item {
@@ -96,7 +92,49 @@ body {
     background-color: #ccc;
 }
 
-.next_button {
+
+
+.tile {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #444;
+    text-align: center;
+    transition: 0.3s;
+    margin: 5px;
+    display: inline-block;
+}
+
+.tile:hover {
+    background-color: #666;
+}
+
+.tileimage {
+    width: 190px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.tilename {
+    position: relative:;
+    top: -15px;
+    color: #eee;
+    font-size: 20px;
+}
+
+.prev_button {
+    position: relative;
+    left: -15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    background-color: #444;
+    color: #bbb;
+    display: block;
+}
+
+.proceed {
     position: relative;
     left: -15px;
     border: none;
@@ -106,76 +144,4 @@ body {
     padding: 5px 10px;
     background-color: #6ea64e;
     color: white;
-}
-/*
-.qchunk {
-    width: 100%;
-    margin: auto;
-    font-family: "Raleway", sans-serif;
-    color: white;
-}
-
-.question {
-    text-align: center;
-}
-
-.choice_container {
-    margin-top: 5%;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.choice {
-    width: 40%;
-    overflow-x: hidden;
-    display: inline-block;
-}
-
-.choice:after {
-    content: "";
-    display: block;
-}
-
-.left {
-    margin-right: 5%;
-}
-
-.right {
-    margin-left: 5%;
-}
-
-.image {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.option {
-    text-align: center;
-}
-
-.left_arrow {
-    float: left;
-}
-
-.right_arrow {
-    float: right;
-}
-
-.sel {
-    width: 30px;
-}
-*/
-
-
-
-.hide {
-    display: none !important;
-}
-
-.show {
-    display: block !important;
 }
