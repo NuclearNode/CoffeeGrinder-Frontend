@@ -15,7 +15,7 @@
     
     <link href="style.css" rel="stylesheet">
     <link href="quizstyle.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+<!--    <script type="text/javascript" src="script.js"></script>-->
     <script type="text/javascript" src="quizscript.js"></script>
     
     <script> 
@@ -38,6 +38,92 @@
             
             <div class="quiz_name">Drink Interest Quiz</div>
 
+            <div class="container">
+                <form>
+<!--                        add action tag to form to send info to server-->
+                    <div id="allergies" class="page hide">
+                        <div class="row">
+                            <span class="q_title">Select Allergies:</span>
+                        </div>
+
+                        <label id="eggs" name="Eggs" class="q_item"> Egg
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="dairy" name="Dairy" class="q_item"> Dairy
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="soy" name="Soy" class="q_item"> Soy
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="tree-nuts" name="Tree Nuts" class="q_item"> Tree Nuts
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label id="wheat" name="Wheat" class="q_item"> Wheat
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                
+                    <div id="hotcold" class="page">
+                        <div class="row">
+                            <span class="q_title">Hot or Cold?</span>
+                        </div>
+                        
+                        
+                        <label id="eggs" name="Eggs" class="q_item"> Egg
+                            <input type="radio" type="radio">
+                        </label>
+                        <label id="dairy" name="Dairy" class="q_item"> Dairy
+                            <input type="radio" name="radio">
+                        </label>
+                        
+                    </div>
+                    
+                </form>
+                
+                <button id="n1" class="prev_button" onClick="nextPrev(-1)">&lt; Prev</button> 
+                <button id="n1" class="next_button" onClick="nextPrev(1)">Next &gt;</button>
+                
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+                
+            </div>
+            
+            
+            
+<!--
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="q_title">Select Allergies</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="q_card">
+                            Hot
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="q_card">
+                            Cold
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    Next >
+                </div>
+-->
+            
+            
+<!--
             <div if="hot_cold" class="qchunk">
                 <div class="question">Hot or Cold</div>
                 <div class="choice_container">
@@ -53,6 +139,7 @@
                 <img src="images/left.png" class="sel left_arrow" onClick="hide('hot_cold')" />
                 <img src="images/right.png" class="sel right_arrow" onClick="hide('hot_cold')"/>
             </div>
+-->
 
         <!--
             <h1 style="word-spacing: 120px">Hot or Cold?</h1>

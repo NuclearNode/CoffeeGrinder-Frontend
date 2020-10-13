@@ -22,17 +22,9 @@ html {
 
 body {
 /*    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);*/
-    background-image: linear-gradient(#222, #444);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: 100%;
-    margin: 0;
-    padding: 0;
     overflow-y: auto;
 }
+
 
 
 
@@ -49,6 +41,73 @@ body {
     font-size: 40px;
 }
 
+.q_card {
+    color: white;
+}
+
+.q_title {
+    color: white;
+    font-size: 30px;
+    line-height: 300%;
+}
+
+.q_item {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    background-color: #4f4f4f;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.q_item:hover {
+    background-color: #424242;
+}
+
+.q_item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 6.5px;
+    left: 6.5px;
+    height: 25px;
+    width: 25px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.q_item input:checked ~ .checkmark {
+    background-color: #ccc;
+}
+
+.next_button {
+    position: relative;
+    left: -15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #6ea64e;
+    color: white;
+}
+/*
 .qchunk {
     width: 100%;
     margin: auto;
@@ -86,6 +145,8 @@ body {
 }
 
 .image {
+    width: 100%;
+    overflow: hidden;
     border: 1px solid white;
     background-size: cover;
     background-position: center;
@@ -97,14 +158,17 @@ body {
 }
 
 .left_arrow {
+    float: left;
 }
 
 .right_arrow {
+    float: right;
 }
 
 .sel {
     width: 30px;
 }
+*/
 
 
 
