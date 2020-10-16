@@ -147,3 +147,7 @@ body {
     background-color: #6ea64e;
     color: white;
 }
+
+.proceed:hover{
+    background-color: lightseagreen;
+}
