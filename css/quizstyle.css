@@ -133,3 +133,35 @@ body {
 .proceed:hover{
     background-color: #83c25f;
 }
+
+.yes {
+    position: relative;
+    left: 70px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #6ea64e;
+    color: white;
+}
+
+.yes:hover{
+    background-color: #83c25f;
+}
+
+.no {
+    position: relative;
+    left: 160px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #6ea64e;
+    color: white;
+}
+
+.no:hover{
+    background-color: #83c25f;
+}
