@@ -104,6 +104,32 @@ body {
     font-size: 20px;
 }
 
+.card {
+    width: 300px;;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    transition: 0.3s;
+    margin: 5px;
+    display: inline-block;
+}
+
+.card:hover {
+    background-color: darkgray;
+}
+
+.cardimage {
+    width: 280px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.cardname {
+    position: relative:;
+    top: -15px;
+    color: #eee;
+    font-size: 20px;
+}
 .prev_button {
     position: relative;
     left: -15px;
