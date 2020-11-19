@@ -197,11 +197,51 @@ function firstSweet()
 	
 }
 
+function drinkTemplate(drink){
+    return `
+    <div class="card">
+        <img class="drink-photo" src="${drink.image}">
+        <h1>${drink.name}</h1>
+`
+}
+
 fetch('drinks.json').then(function(response) {
   return response.json();
 }).then(function(json) {
   let drinks = json;
-  ;
+  
+    final_order = [];
+    
+    for(i = 0;i<drinks.length;i++)
+    {
+        if(
+            drinks[i].temp == temp
+            &&
+            drinks[i].type=='Coffee'
+          
+          )
+            final_order.push(drinks[i]);
+
+    }
+    console.log(final_order.length);
+    
+    document.getElementById("results").innerHTML = `
+    ${final_order.map(function(drink){
+        return `
+                    <div class = "card">
+                        <img class="drink-photo" src="${drink.image}">
+                        <h1>${drink.name}</h1>
+                        <p>${drink.description}</p>
+                    </div>
+
+                `
+    }
+    
+    
+    ).join('')}
+    
+    `
+    
 }).catch(function(err) {
   console.log('Fetch problem: ' + err.message);
 });
