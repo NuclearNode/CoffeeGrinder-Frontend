@@ -45,12 +45,12 @@
                     <div class="row">
                         <span class="q_title">Hot or Cold?</span>
                     </div>
-
-                    <div class="tile" onClick="hide('hotcold'); goto('hot'); register('hot');">
+                    
+                    <div class="tile" onClick="hide('hotcold'); goto('hot'); register('hot'); updateHot() ">
                         <img src="images/hot%20Cropped.jpg" class="tileimage"/>
                         <div class="tilename">Hot</div>
                     </div>
-                    <div class="tile" onClick="hide('hotcold'); goto('cold'); register('cold');">
+                    <div class="tile" onClick="hide('hotcold'); goto('cold'); register('cold'); updateCold();">
                         <img src="images/cold%20Cropped.jpg" class="tileimage"/>
                         <div class="tilename">Cold</div>
                     </div>
@@ -63,7 +63,8 @@
                         <span class="q_title">Coffee, Tea, or Other Hot Drink?</span>
                     </div>
 
-                    <div class="tile" onClick="hide('hot'); goto('hotcoffee'); register('hotcoffee');">
+                    <div class="tile" onClick="hide('hot'); goto('hotcoffee'); register('hotcoffee');
+                                               updateCoffee();">
                         <img src="images/hot%20coffee.jpg" class="tileimage"/>
                         <div class="tilename">Coffee</div>
                     </div>
@@ -296,13 +297,7 @@
                     <div class="tile">
                         <img src="images/hot%20tea.jpg" class="tileimage"/>
 -->
-                        <div class="card" style="overflow: auto; padding: 50px">
-                            <img src="images/cold%20caramel%20frap.jpg" alt="Cold Caramel Frap" style="width:100%">
-                                <div class="container">
-                                <h4><b>Drink Name</b></h4>
-                                <p>Drink Description</p>
-                                </div>
-                            </div>
+                        
                         
                     </div>
                     
