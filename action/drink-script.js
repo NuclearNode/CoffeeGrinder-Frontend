@@ -12,7 +12,9 @@ let wheat = false;
 let treenuts = false;
 let soy = false;
 let dairy = false;
-
+let firstSugar = 0.5;
+let secondSugar = 1.5;
+let thirdSugar = 2.5;
 
 
 >>>>>>> 3c8c6278addd0df7340da7cc08d7d2a24aaa77e4
@@ -282,6 +284,9 @@ function yesSteamer()
 }
 >>>>>>> 3c8c6278addd0df7340da7cc08d7d2a24aaa77e4
 
+function firstSweet()
+{
+	
 
 fetch('drinks.json').then(function(response) {
   return response.json();
