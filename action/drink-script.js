@@ -30,6 +30,7 @@ function updateTea()
 {
     console.log(type);
     type = 'Tea'
+    console.log(type);
 }
 
 function updateFrap()
