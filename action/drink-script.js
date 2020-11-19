@@ -8,7 +8,9 @@ let wheat = false;
 let treenuts = false;
 let soy = false;
 let dairy = false;
-
+let firstSugar = 0.5;
+let secondSugar = 1.5;
+let thirdSugar = 2.5;
 
 
 console.log(temp);
@@ -190,6 +192,9 @@ function yesSteamer()
 	console.log(category);
 }
 
+function firstSweet()
+{
+	
 
 fetch('drinks.json').then(function(response) {
   return response.json();
