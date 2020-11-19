@@ -2,7 +2,8 @@ let temp = false;
 let type = 'None';
 let espresso = false;
 let fruity = false;
-
+let category = 'None';
+let sugar = -1;
 console.log(temp);
 
 
@@ -75,6 +76,90 @@ function noFruity()
     console.log(fruity);
     fruity = false;
     console.log(fruity);
+}
+
+function updateSugar1()
+{
+    sugar = .5;
+}
+
+function updateSugar2()
+{
+    sugar = 2.1;
+}
+
+function updateSugar3()
+{
+    sugar = 3.2;
+}
+
+function updateAmericano()
+{
+    category = 'Americano';
+}
+
+function updateBlackTea()
+{
+    category = 'Black';
+}
+
+function updateBrewed()
+{
+    category = 'Brewed';
+}
+
+function updateCappuccino()
+{
+    category = 'Cappuccino';
+}
+
+function updateCoffeeFrap()
+{
+    category = 'Coffee Frappuccino';
+}
+
+function updateColdBrew()
+{
+    category = 'Cold Brew';
+}
+
+function updateCremeFrap()
+{
+    category = 'Creme Frappuccino';
+}
+
+function updateEspressoShot()
+{
+    category = 'Espresso Shot';
+}
+
+function updateFlatWhite()
+{
+    category = 'Flat White';
+}
+
+function updateGreenTea()
+{
+    category = 'Green';
+}
+
+function update
+
+function updateHotChocolate()
+{
+    console.log(category);
+    category = 'Hot Chocolate';
+    console.log(category);
+}
+
+function updateRefresher()
+{
+    category = 'StarbucksRefresher';
+}
+
+function updateIcedCoconutMilk()
+{
+    category = 'IcedCoconutMilk';
 }
 
 

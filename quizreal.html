@@ -46,7 +46,7 @@
                         <span class="q_title">Hot or Cold?</span>
                     </div>
                     
-                    <div class="tile" onClick="hide('hotcold'); goto('hot'); register('hot'); updateHot() ">
+                    <div class="tile" onClick="hide('hotcold'); goto('hot'); register('hot'); updateHot(); ">
                         <img src="images/hot%20Cropped.jpg" class="tileimage"/>
                         <div class="tilename">Hot</div>
                     </div>
@@ -132,11 +132,12 @@
                         <span class="q_title">Fruity?</span>
                     </div>
 
-                    <div class="tile" onClick="hide('hottea'); goto('sugar'); register('hotfruity');">
+                    <div class="tile" onClick="hide('hottea'); goto('sugar'); register('hotfruity');
+                                               yesFruity();">
                         <img src="images/hot%20fruity.jpg" class="tileimage"/>
                         <div class="tilename">Fruity</div>
                     </div>
-                    <div class="tile" onClick="hide('hottea'); goto('sugar'); register('hotnofruity');">
+                    <div class="tile" onClick="hide('hottea'); goto('sugar'); register('hotnofruity'); noFruity();">
                         <img src="images/no%20hot%20fruity.jpg" class="tileimage"/>
                         <div class="tilename">Not Fruity</div>
                     </div>
@@ -220,11 +221,11 @@
                         <span class="q_title">Contains Espresso?</span>
                     </div>
 
-                    <div class="tile" onClick="hide('icedcoffee'); goto('sugar'); register('coldespresso');">
+                    <div class="tile" onClick="hide('icedcoffee'); goto('sugar'); register('coldespresso'); yesEspresso();">
                         <img src="images/cold%20espresso.jpg" class="tileimage"/>
                         <div class="tilename">Espresso</div>
                     </div>
-                    <div class="tile" onClick="hide('icedcoffee'); goto('sugar'); register('coldnoespresso');">
+                    <div class="tile" onClick="hide('icedcoffee'); goto('sugar'); register('coldnoespresso'); noEspresso();">
                         <img src="images/no%20cold%20espresso.jpg" class="tileimage"/>
                         <div class="tilename">No Espresso</div>
                     </div>
@@ -238,11 +239,11 @@
                         <span class="q_title">Fruity?</span>
                     </div>
 
-                    <div class="tile" onClick="hide('icedtea'); goto('sugar'); register('coldfruity');">
+                    <div class="tile" onClick="hide('icedtea'); goto('sugar'); register('coldfruity'); yesFruity();">
                         <img src="images/cold%20fruity.jpg" class="tileimage"/>
                         <div class="tilename">Fruity</div>
                     </div>
-                    <div class="tile" onClick="hide('icedtea'); goto('sugar'); register('coldnofruity');">
+                    <div class="tile" onClick="hide('icedtea'); goto('sugar'); register('coldnofruity'); noFruity();">
                         <img src="images/no%20cold%20fruity.jpg" class="tileimage"/>
                         <div class="tilename">Not Fruity</div>
                     </div>
