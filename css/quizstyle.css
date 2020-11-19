@@ -114,7 +114,8 @@ body {
     font-size: 20px;
 }
 
-.card {
+.card h1{
+	font-color: #000000;
     width: 300px;;
     border-radius: 10px;
     background-color: #FFFFFF;
